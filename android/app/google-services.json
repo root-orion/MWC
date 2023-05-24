@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "434582337858",
+    "project_id": "my-wash-card",
+    "storage_bucket": "my-wash-card.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434582337858:android:852454f78ce062771b70db",
+        "android_client_info": {
+          "package_name": "com.devintech.mywashcard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "434582337858-e3lo5hm3il6vuun221u4ouknq1q0mqkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGauTGlkc2FJzQ-xJL1B7Uzdz2M_j0ijE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "434582337858-e3lo5hm3il6vuun221u4ouknq1q0mqkr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "434582337858-oqddmmgp5sr7haoutit7drnsqdb1n8pv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.devintech.mywashcard"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
