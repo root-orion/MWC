@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_sizer/flutter_sizer.dart';
+import 'package:get/get.dart';
 import 'package:mywashcard/xd_acceuil.dart';
 import 'package:mywashcard/xd_ouverture.dart';
 import 'package:mywashcard/xd_presentation.dart';
@@ -32,7 +33,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return FlutterSizer(
       builder: (context, orientation, deviceType) {
-       return MaterialApp(
+       return GetMaterialApp(
       title: 'My Wash Card',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
