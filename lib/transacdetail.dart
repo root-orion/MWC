@@ -8,6 +8,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:cinetpay/cinetpay.dart';
 import 'package:flutter_sizer/flutter_sizer.dart';
 import 'package:get/get.dart';
+import 'package:mywashcard/x_dcard_pagenew1.dart';
 import 'package:mywashcard/xd_acceuil.dart';
 
 import 'package:uuid/uuid.dart';
@@ -86,7 +87,7 @@ class _TransactionDetailsState extends State<TransactionDetails>
   void doTransaction() async {
     final authRequest = await post(
       Uri.parse(authUrl),
-      body: {"apikey": apikey, "password": "Bonjour@2020"},
+      body: {"apikey": apikey, "password": "AVD8fKjrYcWEVP8"},
       headers: {"Content-Type": "application/x-www-form-urlencoded"},
     );
     final authResponse = jsonDecode(authRequest.body);
@@ -230,7 +231,7 @@ class _TransactionDetailsState extends State<TransactionDetails>
                             'channels': 'ALL',
                             'description': 'Rechargement de carte'
                           },
-                          waitResponse: (response) {
+                          waitResponse: (response)  {
                             if (mounted) {
                               print(response);
                               doTransaction();
@@ -238,14 +239,7 @@ class _TransactionDetailsState extends State<TransactionDetails>
                               setState(() {
                                 Get.back();
                               });
-                              if (success == true) {
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                    const SnackBar(content: Text('Succes')));
-                              } else if (success == false) {
-                                ScaffoldMessenger.of(context).showSnackBar(
-                                    const SnackBar(
-                                        content: Text('Echec transaction')));
-                              }
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>XDcardPagenew1()));
                             }
                           },
                           onError: (error) {

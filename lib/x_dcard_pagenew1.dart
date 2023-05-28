@@ -329,7 +329,7 @@ class _XDcardPagenew1State extends State<XDcardPagenew1> {
                             if (amount == null || amount.isEmpty) {
                               return 'Entrez un montant';
                             }
-                            if (int.parse(amount) < 200) {
+                            if (int.parse(amount) < 100) {
                               return 'Entrez un montant superieur a 200';
                             }
                             return null;
