@@ -213,7 +213,7 @@ class _UnderConstructState extends State<UnderConstruct> {
                 icon: Icon(Icons.person),
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (contet) => XDProfil()));
+                      MaterialPageRoute(builder: (contet) => UnderConstruct()));
                 },
               ),
               IconButton(
