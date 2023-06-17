@@ -127,7 +127,7 @@ class _XDProfilState extends State<XDProfil> {
           ),
           Pinned.fromPins(
             Pin(start: 25.0, end: 25.0),
-            Pin(size: 278.0, middle: 0.09.h),
+            Pin(size: 200.0, middle: 0.09.h),
             child:
                 // Adobe XD layer: 'Profil' (group)
                 Stack(
@@ -146,17 +146,7 @@ class _XDProfilState extends State<XDProfil> {
                     ],
                   ),
                 ),
-                Pinned.fromPins(
-                  Pin(start: 19.5, end: 20.5),
-                  Pin(size: 1.0, middle: 0.4874),
-                  child:
-                      // Adobe XD layer: 'line1' (shape)
-                      SvgPicture.string(
-                    _svg_jfckv,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
+               
                 Pinned.fromPins(
                   Pin(start: 19.5, end: 20.5),
                   Pin(size: 1.0, middle: 0.6462),
@@ -268,160 +258,7 @@ class _XDProfilState extends State<XDProfil> {
                   }
                   ),
                 ),
-                Pinned.fromPins(
-                  Pin(start: 24.5, end: 17.5),
-                  Pin(size: 100.0, end: 26.0),
-                  child:
-                      // Adobe XD layer: 'Navigation' (group)
-                      Stack(
-                    children: <Widget>[
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 0.0),
-                        Pin(size: 24.0, start: 0.0),
-                        child:
-                            // Adobe XD layer: 'Infos perso' (group)
-                            PageLink(
-                          links: [
-                            PageLinkInfo(
-                              transition: LinkTransition.Fade,
-                              ease: Curves.linear,
-                              duration: 0.3,
-                              pageBuilder: () => UnderConstruct(),
-                            ),
-                          ],
-                          child: Stack(
-                            children: <Widget>[
-                              Pinned.fromPins(
-                                Pin(size: 250.0, start: 0.0),
-                                Pin(start: 2.0, end: 3.0),
-                                child:const  Text(
-                                  'INFORMATIONS PERSONELLES',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 16,
-                                    color: const Color(0xffe1bd07),
-                                    letterSpacing: -0.13770709228515626,
-                                  ),
-                                  softWrap: false,
-                                ),
-                              ),
-                              Pinned.fromPins(
-                                Pin(size: 12.0, end: 0.0),
-                                Pin(start: 0.0, end: 0.0),
-                                child: const Text(
-                                  '>',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 20,
-                                    color:  Color(0xffe1bd07),
-                                    letterSpacing: -0.17213386535644531,
-                                  ),
-                                  softWrap: false,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 0.0),
-                        Pin(size: 24.0, middle: 0.5),
-                        child:
-                            // Adobe XD layer: 'Modification MDP' (group)
-                            PageLink(
-                          links: [
-                            PageLinkInfo(
-                              transition: LinkTransition.Fade,
-                              ease: Curves.linear,
-                              duration: 0.3,
-                              pageBuilder: () => UnderConstruct(),
-                            ),
-                          ],
-                          child: Stack(
-                            children: <Widget>[
-                              Pinned.fromPins(
-                                Pin(size: 92.0, start: 0.0),
-                                Pin(size: 19.0, end: 1.0),
-                                child: const Text(
-                                  'VEHICULES',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 16,
-                                    color:  Color(0xffe1bd07),
-                                    letterSpacing: -0.13770709228515626,
-                                  ),
-                                  softWrap: false,
-                                ),
-                              ),
-                              Pinned.fromPins(
-                                Pin(size: 12.0, end: 0.0),
-                                Pin(start: 0.0, end: 0.0),
-                                child: const Text(
-                                  '>',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 20,
-                                    color:  Color(0xffe1bd07),
-                                    letterSpacing: -0.17213386535644531,
-                                  ),
-                                  softWrap: false,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 0.0),
-                        Pin(size: 24.0, end: 0.0),
-                        child:
-                            // Adobe XD layer: 'Modification MDP' (group)
-                            PageLink(
-                          links: [
-                            PageLinkInfo(
-                              transition: LinkTransition.Fade,
-                              ease: Curves.linear,
-                              duration: 0.3,
-                              pageBuilder: () => UnderConstruct(),
-                            ),
-                          ],
-                          child: Stack(
-                            children: <Widget>[
-                              Pinned.fromPins(
-                                Pin(start: 0.0, end: 25.0),
-                                Pin(size: 19.0, end: 1.0),
-                                child: const Text(
-                                  'MODIFIACTION DE MOT DE PASSE',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 16,
-                                    color: Color(0xffe1bd07),
-                                    letterSpacing: -0.13770709228515626,
-                                  ),
-                                  softWrap: false,
-                                ),
-                              ),
-                              Pinned.fromPins(
-                                Pin(size: 12.0, end: 0.0),
-                                Pin(start: 0.0, end: 0.0),
-                                child: const Text(
-                                  '>',
-                                  style: TextStyle(
-                                    fontFamily: 'Montserrat',
-                                    fontSize: 20,
-                                    color:  Color(0xffe1bd07),
-                                    letterSpacing: -0.17213386535644531,
-                                  ),
-                                  softWrap: false,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                
                 Pinned.fromPins(
                   Pin(size: 18.w, start: 5.w),
                   Pin(size: 12.h, start: 5.h),
