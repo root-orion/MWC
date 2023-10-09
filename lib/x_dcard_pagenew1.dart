@@ -7,6 +7,7 @@ import 'package:flutter_sizer/flutter_sizer.dart';
 import 'package:get/get.dart';
 import 'package:mywashcard/paiemwnt.dart';
 import 'package:mywashcard/transacdetail.dart';
+import 'package:mywashcard/under_construct.dart';
 import 'package:mywashcard/xd_profil.dart';
 import 'package:mywashcard/xd_resultat_recherche.dart';
 import 'package:mywashcard/xd_solde.dart';
@@ -231,7 +232,7 @@ class _XDcardPagenew1State extends State<XDcardPagenew1> {
                 icon: Icon(Icons.person),
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (contet) => XDProfil()));
+                      MaterialPageRoute(builder: (contet) => UnderConstruct()));
                 },
               ),
               IconButton(

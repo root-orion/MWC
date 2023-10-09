@@ -116,17 +116,17 @@ class XDResultatRecherche extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          Pinned.fromPins(
-            Pin(start: 27.0, end: 26.0),
-            Pin(size: 20.h, middle: 0.37),
-            child:
-                // Adobe XD layer: 'Recherche' (group)
-                const RechercheGroup(),
-          ),
+          // Pinned.fromPins(
+          //   Pin(start: 27.0, end: 26.0),
+          //   Pin(size: 20.h, middle: 0.37),
+          //   child:
+          //       // Adobe XD layer: 'Recherche' (group)
+          //       const RechercheGroup(),
+          // ),
 
           Pinned.fromPins(
             Pin(start: 2.w, end: 2.w),
-            Pin(size: 45.h, middle: 1.1),
+            Pin(size: 45.h, middle: 0.65),
             child:
                 // Adobe XD layer: 'Liste resultat' (component)
                 StreamBuilder(
@@ -186,7 +186,7 @@ class XDResultatRecherche extends StatelessWidget {
 
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => XDAcceuil()));
+                  MaterialPageRoute(builder: (context) => XDResultatRecherche()));
             },
             child: Icon(
               Icons.location_on,

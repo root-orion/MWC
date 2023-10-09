@@ -27,9 +27,9 @@ class XDProfil extends StatefulWidget {
 
 class _XDProfilState extends State<XDProfil> {
   double mySolde = 0;
-  String myName='';
-  String myPrenoms='';
-  
+  String myName = '';
+  String myPrenoms = '';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,10 +45,7 @@ class _XDProfilState extends State<XDProfil> {
                     gradient: LinearGradient(
                       begin: Alignment(0.0, 1.036),
                       end: Alignment(0.0, -0.547),
-                      colors: [
-                        Color(0xff000000),
-                        Color(0xffcbcbcb)
-                      ],
+                      colors: [Color(0xff000000), Color(0xffcbcbcb)],
                       stops: [0.0, 1.0],
                     ),
                   ),
@@ -80,7 +77,7 @@ class _XDProfilState extends State<XDProfil> {
           ),
           Pinned.fromPins(
             Pin(start: 57.0, end: 56.0),
-            Pin(size: 111.0, middle: 0.6306),
+            Pin(size: 111.0, middle: 0.306),
             child:
                 // Adobe XD layer: 'Logo' (shape)
                 Container(
@@ -92,6 +89,13 @@ class _XDProfilState extends State<XDProfil> {
                       Colors.black.withOpacity(0.2), BlendMode.dstIn),
                 ),
               ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [],
+                  )
+                ],
+              ),
             ),
           ),
           Pinned.fromPins(
@@ -99,18 +103,16 @@ class _XDProfilState extends State<XDProfil> {
             Pin(size: 80.0, start: 0.0),
             child: Container(
               decoration: const BoxDecoration(
-                color:  Color(0xffe1bd07),
+                color: Color(0xffe1bd07),
                 borderRadius: BorderRadius.only(
                   bottomRight: Radius.circular(25.0),
                   bottomLeft: Radius.circular(25.0),
                 ),
-               
               ),
-               child:XDSolde(),
+              child: XDSolde(),
             ),
           ),
           Container(),
-    
           Pinned.fromPins(
             Pin(start: 27.0, end: 26.0),
             Pin(size: 40.0, middle: 0.1667),
@@ -146,7 +148,17 @@ class _XDProfilState extends State<XDProfil> {
                     ],
                   ),
                 ),
-               
+                Pinned.fromPins(
+                  Pin(start: 19.5, end: 20.5),
+                  Pin(size: 1.0, middle: 0.4874),
+                  child:
+                      // Adobe XD layer: 'line1' (shape)
+                      SvgPicture.string(
+                    _svg_jfckv,
+                    allowDrawingOutsideViewBox: true,
+                    fit: BoxFit.fill,
+                  ),
+                ),
                 Pinned.fromPins(
                   Pin(start: 19.5, end: 20.5),
                   Pin(size: 1.0, middle: 0.6462),
@@ -258,14 +270,167 @@ class _XDProfilState extends State<XDProfil> {
                   }
                   ),
                 ),
-                
+                Pinned.fromPins(
+                  Pin(start: 24.5, end: 17.5),
+                  Pin(size: 100.0, end: 26.0),
+                  child:
+                      // Adobe XD layer: 'Navigation' (group)
+                      Stack(
+                    children: <Widget>[
+                      Pinned.fromPins(
+                        Pin(start: 0.0, end: 0.0),
+                        Pin(size: 24.0, start: 0.0),
+                        child:
+                            // Adobe XD layer: 'Infos perso' (group)
+                            PageLink(
+                          links: [
+                            PageLinkInfo(
+                              transition: LinkTransition.Fade,
+                              ease: Curves.linear,
+                              duration: 0.3,
+                              pageBuilder: () => UnderConstruct(),
+                            ),
+                          ],
+                          child: Stack(
+                            children: <Widget>[
+                              Pinned.fromPins(
+                                Pin(size: 250.0, start: 0.0),
+                                Pin(start: 2.0, end: 3.0),
+                                child:const  Text(
+                                  'INFORMATIONS PERSONELLES',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 16,
+                                    color: const Color(0xffe1bd07),
+                                    letterSpacing: -0.13770709228515626,
+                                  ),
+                                  softWrap: false,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 12.0, end: 0.0),
+                                Pin(start: 0.0, end: 0.0),
+                                child: const Text(
+                                  '>',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 20,
+                                    color:  Color(0xffe1bd07),
+                                    letterSpacing: -0.17213386535644531,
+                                  ),
+                                  softWrap: false,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(start: 0.0, end: 0.0),
+                        Pin(size: 24.0, middle: 0.5),
+                        child:
+                            // Adobe XD layer: 'Modification MDP' (group)
+                            PageLink(
+                          links: [
+                            PageLinkInfo(
+                              transition: LinkTransition.Fade,
+                              ease: Curves.linear,
+                              duration: 0.3,
+                              pageBuilder: () => UnderConstruct(),
+                            ),
+                          ],
+                          child: Stack(
+                            children: <Widget>[
+                              Pinned.fromPins(
+                                Pin(size: 92.0, start: 0.0),
+                                Pin(size: 19.0, end: 1.0),
+                                child: const Text(
+                                  'VEHICULES',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 16,
+                                    color:  Color(0xffe1bd07),
+                                    letterSpacing: -0.13770709228515626,
+                                  ),
+                                  softWrap: false,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 12.0, end: 0.0),
+                                Pin(start: 0.0, end: 0.0),
+                                child: const Text(
+                                  '>',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 20,
+                                    color:  Color(0xffe1bd07),
+                                    letterSpacing: -0.17213386535644531,
+                                  ),
+                                  softWrap: false,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Pinned.fromPins(
+                        Pin(start: 0.0, end: 0.0),
+                        Pin(size: 24.0, end: 0.0),
+                        child:
+                            // Adobe XD layer: 'Modification MDP' (group)
+                            PageLink(
+                          links: [
+                            PageLinkInfo(
+                              transition: LinkTransition.Fade,
+                              ease: Curves.linear,
+                              duration: 0.3,
+                              pageBuilder: () => UnderConstruct(),
+                            ),
+                          ],
+                          child: Stack(
+                            children: <Widget>[
+                              Pinned.fromPins(
+                                Pin(start: 0.0, end: 25.0),
+                                Pin(size: 19.0, end: 1.0),
+                                child: const Text(
+                                  'MODIFIACTION DE MOT DE PASSE',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 16,
+                                    color: Color(0xffe1bd07),
+                                    letterSpacing: -0.13770709228515626,
+                                  ),
+                                  softWrap: false,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 12.0, end: 0.0),
+                                Pin(start: 0.0, end: 0.0),
+                                child: const Text(
+                                  '>',
+                                  style: TextStyle(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 20,
+                                    color:  Color(0xffe1bd07),
+                                    letterSpacing: -0.17213386535644531,
+                                  ),
+                                  softWrap: false,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
                 Pinned.fromPins(
                   Pin(size: 18.w, start: 5.w),
                   Pin(size: 12.h, start: 5.h),
                   child:
                       // Adobe XD layer: 'default_pp' (shape)
                       Container(
-                        constraints: BoxConstraints(maxHeight: 4.h,maxWidth: 20.w),
+                    constraints: BoxConstraints(maxHeight: 4.h, maxWidth: 20.w),
                     decoration: const BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage('assets/images/user.png'),
@@ -274,7 +439,7 @@ class _XDProfilState extends State<XDProfil> {
                     ),
                   ),
                 ),
-              ],  
+              ],
             ),
           ),
         ],
@@ -340,7 +505,6 @@ class _XDProfilState extends State<XDProfil> {
                   _showSimpleModalDialog(context);
                 },
               ),
-              
               IconButton(
                 iconSize: 30.0,
                 padding: const EdgeInsets.only(right: 28.0),
@@ -415,9 +579,6 @@ class _XDProfilState extends State<XDProfil> {
         });
   }
 
-  
-
-
   _fetch_personal_data() async {
     try {
       final firebaseUser = await FirebaseAuth.instance.currentUser;
@@ -430,7 +591,7 @@ class _XDProfilState extends State<XDProfil> {
           print(ds);
           final solde = ds.data()!['Nom'];
           final prenoms = ds.data()!['Prenoms'];
-           myPrenoms=prenoms.toString();
+          myPrenoms = prenoms.toString();
           if (solde != null) {
             myName = solde.toString();
 

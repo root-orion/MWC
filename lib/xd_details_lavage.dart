@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_sizer/flutter_sizer.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:mywashcard/under_construct.dart';
 import 'package:mywashcard/x_dcard_pagenew1.dart';
 import 'package:mywashcard/xd_profil.dart';
+import 'package:mywashcard/xd_resultat_recherche.dart';
 import './xd_solde.dart';
 import './xd_bouton_lavage.dart';
 import './xd_acceuil.dart';
@@ -169,7 +171,7 @@ class _XDDetailsLavageState extends State<XDDetailsLavage> {
 
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => XDAcceuil()));
+                  MaterialPageRoute(builder: (context) => XDResultatRecherche()));
             },
             child: const Icon(
               Icons.location_on,
@@ -210,7 +212,7 @@ class _XDDetailsLavageState extends State<XDDetailsLavage> {
                 icon: const Icon(Icons.person),
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (contet) => XDProfil()));
+                      MaterialPageRoute(builder: (contet) => UnderConstruct()));
                 },
               ),
               IconButton(
